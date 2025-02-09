@@ -47,7 +47,7 @@ const page = () => {
                 btnurl="/about"
             ></About1>  
             <HowWork></HowWork> 
-            <Choose1
+            {/* <Choose1
                 subtitle="App Advantage"
                 title="Get Benefit By Using Trending Apps"
                 content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly"
@@ -61,22 +61,22 @@ const page = () => {
                 ]}                 
                 btnname="Download App"
                 btnurl="/about"
-            ></Choose1>
+            ></Choose1> */}
             <Feature1></Feature1> 
             <Counter1></Counter1>
             <Faq1></Faq1> 
             <Testimonial></Testimonial>  
             <Feature2></Feature2>
             <Pricing1></Pricing1> 
-            <Cta1
+            {/* <Cta1
                 subtitle="Our App"
                 title="Download our app and start your free trail to get started today!"
                 content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised"
                 btnurl1="https://play.google.com/store"
                 btnurl2="https://www.apple.com/store"
                 img="/assets/images/cta/ctaThumb1_1.png"
-            ></Cta1>     
-            <Blog1></Blog1>                         
+            ></Cta1>      */}
+            {/* <Blog1></Blog1>                          */}
     </div>
   );
 };

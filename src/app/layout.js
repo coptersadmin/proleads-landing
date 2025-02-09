@@ -18,13 +18,13 @@ const nunito = Nunito({
 export const metadata = {
   title: {
     absolute: '',
-    default: 'Niotech - Saas & App Landing Page NextJS Template',
-    template: '%s | Niotech - Saas & App Landing Page NextJS Template',
+    default: 'Pro Leads - find leads using linkedin profile',
+    template: '%s | Pro Leads - find leads using linkedin profile',
   },
-  description: 'Niotech - Saas & App Landing Page NextJS Template',
+  description: 'Find Leads using linkedin profile',
   openGraph: {
-    title: 'Niotech - Saas & App Landing Page NextJS Template',
-    description: 'Niotech - Saas & App Landing Page NextJS Template',
+    title: 'Find Leads using linkedin profile',
+    description: 'Find Leads using linkedin profile',
   },
 };
 

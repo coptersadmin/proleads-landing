@@ -7,9 +7,9 @@ const page = () => {
     <div>
              <BreadCumb
                 bgimg="/assets/images/bg/breadcumgBg.png"
-                Title="Blog Grid"
+                Title="Blog"
             ></BreadCumb>     
-            <Blog2></Blog2>       
+            {/* <Blog2></Blog2>        */}
     </div>
   );
 };

@@ -69,7 +69,6 @@ const HeroBanner1 = ({
                     <div className="intro-section-title">
                       <h1
                         className="intro-title wow fadeInUp "
-                        
                         data-wow-delay=".2s"
                       >
                         {title}
@@ -85,7 +84,7 @@ const HeroBanner1 = ({
                       className="btn-wrapper style1 wow fadeInUp"
                       data-wow-delay=".6s"
                     >
-                      <Link className="theme-btn" href={btnurl}>
+                      <Link className="theme-btn" target="_blank" href={btnurl}>
                         {btnname}
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
@@ -113,14 +112,6 @@ const HeroBanner1 = ({
                         className="fancy-box style1 wow fadeInUp"
                         data-wow-delay=".2s"
                       >
-                        <div className="item">
-                          <Image
-                            src={cusimg}
-                            alt="img"
-                            width={136}
-                            height={61}
-                          />
-                        </div>
                         <div className="item">
                           <h6>{cusnumber}</h6>
                           <p>{cuscontent}</p>
@@ -197,7 +188,7 @@ const HeroBanner1 = ({
                       />
                     </div>
                     <Image
-                      className="main-thumb img-custom-anim-right wow fadeInUp"
+                      className="main-thumb img-custom-anim-right wow fadeInUp image-banner"
                       src={img}
                       alt="img"
                       width={726}

@@ -1,4 +1,5 @@
 import BreadCumb from '@/app/Components/Common/BreadCumb';
+import Faq1 from '@/app/Components/Faq/Faq1';
 import Faq2 from '@/app/Components/Faq/Faq2';
 import React from 'react';
 
@@ -9,7 +10,7 @@ const page = () => {
                 bgimg="/assets/images/bg/breadcumgBg.png"
                 Title="FAQ's"
             ></BreadCumb>
-            <Faq2></Faq2>       
+            <Faq1></Faq1>       
     </div>
   );
 };

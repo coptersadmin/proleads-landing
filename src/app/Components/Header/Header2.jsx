@@ -64,9 +64,9 @@ export default function Header2({ variant }) {
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
 
-              <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
+              <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"></a>
                 <div className="header-button ms-4">
-                    <Link href="/contact" className="theme-btn">
+                    <Link href="https://dashboard.proleads-landing.vercel.app" target="_blank" className="theme-btn">
                         <span>
                             Get Started
                             <i className="bi bi-arrow-right"></i>

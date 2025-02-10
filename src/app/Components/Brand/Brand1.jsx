@@ -4,7 +4,6 @@ import data from '../../Data/brand1.json';
 import Image from "next/image";
 
 const Brand1 = () => {
-
     const settings = {
         dots: false,
         infinite: true,
@@ -34,7 +33,7 @@ const Brand1 = () => {
             }
           }
         ]
-      }; 
+    }; 
 
     return (
         <div className="brand-slider-section section-padding fix">
@@ -42,26 +41,25 @@ const Brand1 = () => {
                 <div className="container">
                     <div className="brand-slider-wrapper style1">
                         <h2 className="single-section-title wow fadeInUp" data-wow-delay=".2s">
-                            Millions of clients trust us.
+                           Clients who trust us.
                         </h2>
                         <div className="row">
                             <div className="slider-area brandSliderOne">
-                                <div className="swiper gt-slider" id="brandSliderOne" >
-
+                                <div className="swiper gt-slider" id="brandSliderOne">
                                     <div className="swiper-wrapper">
-                                    <Slider {...settings}>
-                                    {data.map((item, index)=>(
-                                        <div key={index} className="swiper-slide">
-                                            <div className="brand-logo">
-                                            <Image 
-                                            src={item.img} 
-                                            alt="img" 
-                                            width={200}
-                                            height={60}
-                                            />
-                                            </div>
-                                        </div>
-                                        ))}
+                                        <Slider {...settings}>
+                                            {data.map((item, index) => (
+                                                <div key={index} className="swiper-slide text-center"> 
+                                                    <div className="brand-logo flex justify-center"> 
+                                                        <Image 
+                                                            src={item.img} 
+                                                            alt="img" 
+                                                            width={200}
+                                                            height={60}
+                                                        />
+                                                    </div>
+                                                </div>
+                                            ))}
                                         </Slider>
                                     </div>
                                 </div>

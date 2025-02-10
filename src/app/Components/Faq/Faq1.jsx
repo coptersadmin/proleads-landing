@@ -1,79 +1,90 @@
-"use client"
-import { useRef } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import SectionTitle from "../Common/SectionTitle";
-import { useState } from "react";
-import { useEffect } from "react";
-import data from '../../Data/faq1.json';
-import Image from "next/image";
 
 const Faq1 = () => {
-
-    const accordionContentRef = useRef(null);
     const [openItemIndex, setOpenItemIndex] = useState(-1);
     const [firstItemOpen, setFirstItemOpen] = useState(true);
-  
-    const handleItemClick = index => {
-      if (index === openItemIndex) {
-        setOpenItemIndex(-1);
-      } else {
-        setOpenItemIndex(index);
-      }
+
+    const handleItemClick = (index) => {
+        setOpenItemIndex(index === openItemIndex ? -1 : index);
     };
+
     useEffect(() => {
-      if (firstItemOpen) {
-        setOpenItemIndex(0);
-        setFirstItemOpen(false);
-      }
+        if (firstItemOpen) {
+            setOpenItemIndex(0);
+            setFirstItemOpen(false);
+        }
     }, [firstItemOpen]);
 
-    const FaqContent = {
-        Content:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which do not look even slightly',
-        img1:'/assets/images/faq/faqThumb1_2.png',
-        img2:'/assets/images/faq/faqThumb1_1.png'
-      }
+    const faqData = [
+        {
+            title: "How is our content verified?",
+            desc: "We verify content through multiple steps. When a prospect signs up using LinkedIn, we validate their identity using phone number and OTP.",
+        },
+        {
+            title: "How is content verified after a prospect adds it?",
+            desc: "Once a prospect adds content, our automated system verifies its authenticity to ensure it's accurate and up-to-date.",
+        },
+        {
+            title: "What if the content is invalid?",
+            desc: "If you find any content that is incorrect or outdated, report it to us. We will review and refund credits for invalid entries.",
+        },
+        {
+            title: "Why is ProLeads more affordable?",
+            desc: "Our competitors charge significantly higher prices for lead generation. ProLeads provides the same high-quality leads at a fraction of the cost.",
+        },
+        {
+            title: "Do I own the leads I get from ProLeads?",
+            desc: "Yes! Once you access a lead, it is yours to use indefinitely. There are no restrictions on how you engage with your leads.",
+        },
+        {
+            title: "How often is the database updated?",
+            desc: "Our lead database is updated daily using AI-driven validation and user-reported corrections to ensure high accuracy.",
+        },
+    ];
 
     return (
-        
         <section className="faq-section section-padding fix">
             <div className="container">
                 <div className="faq-wrapper style1">
                     <div className="row gy-5 gy-xl-0 gx-60 d-flex align-items-start">
-                        <div className="col-xl-6">
+                        <div className="col-xl-12">
                             <div className="faq-content style1">
                                 <div className="section-title">
-                                    <SectionTitle
-                                        SubTitle="FAQs"
-                                        Title="Frequently Ask Questions"
-                                    ></SectionTitle>                                    
-                                    <p className="section-desc wow fadeInUp" data-wow-delay=".6s">{FaqContent.Content}</p>
+                                    <SectionTitle SubTitle="FAQs" Title="Frequently Asked Questions" />
+                                    <p className="section-desc">Get answers to common questions about ProLeads and how our platform works.</p>
                                 </div>
                                 <div className="faq-accordion">
                                     <div className="accordion" id="accordion">
-                                    {data.slice(0,3).map((item, index)=>(
-                                        <div key={index} className={`accordion-item mb-3 wow fadeInUp ${index === openItemIndex ? "active" : "" }`} data-wow-delay=".3s">
-                                            <h5 onClick={() => handleItemClick(index)} className="accordion-header">
-                                                <button className="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true"
-                                                    aria-controls="faq1">
-                                                    {item.title}
-                                                </button>
-                                            </h5>
-                                            <div ref={accordionContentRef} id="faq1" className="accordion-collapse collapse" data-bs-parent="#accordion">
-                                                <div className="accordion-body">
-                                                {item.desc}
+                                        {faqData.map((item, index) => (
+                                            <div
+                                                key={index}
+                                                className={`accordion-item mb-3 wow fadeInUp ${index === openItemIndex ? "active" : ""}`}
+                                                data-wow-delay=".3s"
+                                            >
+                                                <h5 onClick={() => handleItemClick(index)} className="accordion-header">
+                                                    <button
+                                                        className="accordion-button collapsed"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target={`#faq${index}`}
+                                                        aria-expanded={index === openItemIndex}
+                                                        aria-controls={`faq${index}`}
+                                                    >
+                                                        {item.title}
+                                                    </button>
+                                                </h5>
+                                                <div
+                                                    id={`faq${index}`}
+                                                    className={`accordion-collapse collapse ${index === openItemIndex ? "show" : ""}`}
+                                                    data-bs-parent="#accordion"
+                                                >
+                                                    <div className="accordion-body">{item.desc}</div>
                                                 </div>
                                             </div>
-                                        </div>
                                         ))}
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-6">
-                            <div className="faq-thumb">
-                            <Image className="main-thumb  wow fadeInUp" src={FaqContent.img1} alt="img" width={791} height={679}   />                              
-                                <div className="absolute-thumb float-bob-x">
-                                <Image src={FaqContent.img2} alt="img" width={236} height={474}   /> 
                                 </div>
                             </div>
                         </div>

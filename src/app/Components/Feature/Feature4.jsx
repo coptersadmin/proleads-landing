@@ -20,7 +20,7 @@ const Feature4 = ({img,subtitle,title,content,FeatureList,btnname,btnurl}) => {
                         <div className="about-content">
                             <div className="section-title">
                                 <div className="subtitle wow fadeInUp" data-wow-delay=".2s">
-                                    {subtitle} <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   />
+                                    {subtitle}
                                 </div>
                                 <h2 className="title wow fadeInUp" data-wow-delay=".4s">{title}</h2>
                                 <p className="wow fadeInUp" data-wow-delay=".6s">
@@ -39,7 +39,7 @@ const Feature4 = ({img,subtitle,title,content,FeatureList,btnname,btnurl}) => {
                                 ))}
 
                             </ul>
-                            <Link className="theme-btn style2 wow fadeInUp" data-wow-delay=".4s" href={btnurl}>{btnname} <i className="bi bi-arrow-right"></i>
+                            <Link target='_blank' className="theme-btn style2 wow fadeInUp" data-wow-delay=".4s" href={btnurl}>{btnname} <i className="bi bi-arrow-right"></i>
                             </Link>
                         </div>
                     </div>

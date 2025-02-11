@@ -5,7 +5,7 @@ import parse from 'html-react-parser';
 import Link from "next/link";
 import Image from "next/image";
 
-const HeroBanner3 = ({bgimg,subtitle,title,content,btnname,btnurl,btnname2,btnurl2,img1,img2}) => {
+const HeroBanner4 = ({bgimg,subtitle,title,content,btnname,btnurl,btnname2,btnurl2,img1,img2}) => {
 
     useEffect(() => {
         loadBackgroudImages();
@@ -25,7 +25,7 @@ const HeroBanner3 = ({bgimg,subtitle,title,content,btnname,btnurl,btnname2,btnur
                            {content}
                         </p>
                         <div className="btn-wrapper style1 wow fadeInUp" data-wow-delay=".6s">
-                            <Link className="theme-btn" href={btnurl}>{btnname}
+                            <Link target="_blank" className="theme-btn" href={btnurl}>{btnname}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     viewBox="0 0 16 16" fill="none">
                                     <g clipPath="url(#clip0_11_22)">
@@ -41,19 +41,19 @@ const HeroBanner3 = ({bgimg,subtitle,title,content,btnname,btnurl,btnname2,btnur
                                 </svg>
 
                             </Link>
-                            <Link className="theme-btn style2 wow fadeInUp" data-wow-delay=".2s"
+                            {/* <Link className="theme-btn style2 wow fadeInUp" data-wow-delay=".2s"
                                 href={btnurl2}>{btnname2} <i className="bi bi-android2"></i>
                                 
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 </div>
                 <div className="col-xxl-4 col-xl-6 wow fadeInUp" data-wow-delay=".3s">
                     <div className="hero-image">
-                    <Image src={img1} alt="img" width={754} height={658}   />
-                        <div className="mobile-image">
+                    <Image src={'https://niotech-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimages%2Fhero%2F01.png&w=828&q=75'} alt="img" width={754} height={658}   />
+                        {/* <div className="mobile-image">
                         <Image src={img2} alt="img" width={180} height={363}   />
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -63,4 +63,4 @@ const HeroBanner3 = ({bgimg,subtitle,title,content,btnname,btnurl,btnname2,btnur
     );
 };
 
-export default HeroBanner3;
+export default HeroBanner4;

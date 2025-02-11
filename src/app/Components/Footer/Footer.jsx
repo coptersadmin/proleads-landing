@@ -27,10 +27,7 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="footer-content">
-                  <p>
-                    It is a long established fact that from will be distracted
-                    by the readable from when looking.
-                  </p>
+                  <p>Connect with Decision-Makers Effortlessly</p>
                   {/* <div className="store-links">
                                         <div className="apple">
                                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="17"

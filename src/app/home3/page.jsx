@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroBanner3 from '../Components/HeroBanner/HeroBanner3';
+import HeroBanner4 from '../Components/HeroBanner/HeroBanner4';
 import Feature4 from '../Components/Feature/Feature4';
 import Feature5 from '../Components/Feature/Feature5';
 import Feature6 from '../Components/Feature/Feature6';
@@ -14,7 +14,7 @@ import Blog1 from '../Components/Blog/Blog1';
 const page = () => {
     return (
         <div>
-            <HeroBanner3
+            <HeroBanner4
                 bgimg="/assets/images/hero/hero-bg.jpg"
                 subtitle="Streaming your Workflow"
                 title="Organize, Track, and Complete Task <span>Efficiently</span>"
@@ -25,7 +25,7 @@ const page = () => {
                 btnurl2="/about"
                 img1="/assets/images/hero/01.png"
                 img2="/assets/images/hero/mobile.png"
-            ></HeroBanner3>  
+            ></HeroBanner4>  
             <Feature4
                 img="/assets/images/about/01.png"
                 subtitle="Our Features"

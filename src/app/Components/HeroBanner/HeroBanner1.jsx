@@ -30,15 +30,7 @@ const HeroBanner1 = ({
                 height={854}
               />
             </div>
-            <div className="shape2">
-              <Image
-                src="/assets/images/shape/introShape1_2.png"
-                alt="img"
-                width={983}
-                height={954}
-              />
-            </div>
-            <div className="shape3 d-none d-xxl-block cir36">
+            <div className="shape3 d-none d-xl-block cir36">
               <Image
                 src="/assets/images/shape/introShape1_3.png"
                 alt="img"
@@ -46,7 +38,7 @@ const HeroBanner1 = ({
                 height={58}
               />
             </div>
-            <div className="shape4 d-none d-xxl-block cir36">
+            <div className="shape4 d-none d-xl-block cir36">
               <Image
                 src="/assets/images/shape/introShape1_4.png"
                 alt="img"
@@ -54,7 +46,7 @@ const HeroBanner1 = ({
                 height={58}
               />
             </div>
-            <div className="shape5 d-none d-xxl-block cir36">
+            <div className="shape5 d-none d-xl-block cir36">
               <Image
                 src="/assets/images/shape/introShape1_5.png"
                 alt="img"

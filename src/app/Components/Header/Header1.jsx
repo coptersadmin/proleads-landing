@@ -43,7 +43,7 @@ export default function Header1({ variant }) {
             <div className="cs_main_header_in">
               <div className="cs_main_header_left">
                 <Link className="cs_site_branding" href="/">
-                  <div className="logo-header">Pro Leads</div>
+                  <div className="logo-header">Build Your Contact List</div>
                 </Link>
               </div>
               <div className="cs_main_header_center">
@@ -66,7 +66,7 @@ export default function Header1({ variant }) {
 
               <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"></a>
                 <div className="header-button ms-4">
-                    <Link href="https://dashboard.proleads-landing.vercel.app" target="_blank" className="theme-btn">
+                    <Link href="https://dashboard.buildyourcontactlist.com" target="_blank" className="theme-btn">
                         <span>
                             Get Started
                             <i className="bi bi-arrow-right"></i>

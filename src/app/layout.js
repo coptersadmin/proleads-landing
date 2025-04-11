@@ -18,8 +18,8 @@ const nunito = Nunito({
 export const metadata = {
   title: {
     absolute: '',
-    default: 'Pro Leads - find leads using linkedin profile',
-    template: '%s | Pro Leads - find leads using linkedin profile',
+    default: 'Build Your Contact List - find leads using linkedin profile',
+    template: '%s | Build Your Contact List - find leads using linkedin profile',
   },
   description: 'Find Leads using linkedin profile',
   openGraph: {

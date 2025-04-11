@@ -59,7 +59,7 @@ const Pricing1 = () => {
                   "Custom lead filtering",
                 ]}
                 btnname="Buy Now"
-                btnurl="https://dashboard.proleads-landing.vercel.app"
+                btnurl="https://dashboard.buildyourcontactlist.com"
               ></PricingCard>
             </div>
           </div>

@@ -21,7 +21,7 @@ const page = () => {
           "Refund Guarantee: If a contact isn't verified, you get your money back—no risks involved.",
         ]}
         btnname="Learn More"
-        btnurl="https://dashboard.proleads-landing.vercel.app"
+        btnurl="https://dashboard.buildyourcontactlist.com"
       ></About4>
     </div>
   );

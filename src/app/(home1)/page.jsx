@@ -24,9 +24,9 @@ const page = () => {
         title="Find & Connect with Decision-Makers <span>Effortlessly</span>"
         content="Sign in with LinkedIn, verify your identity, and add your phone number to access a network of real, verified contacts."
         btnname="Get Started Now"
-        btnurl="https://dashboard.proleads-landing.vercel.app"
+        btnurl="https://dashboard.buildyourcontactlist.com"
         btnname2="Download App"
-        btnurl2="https://dashboard.proleads-landing.vercel.app"
+        btnurl2="https://dashboard.buildyourcontactlist.com"
         img1="/assets/images/hero/01.png"
         img2="/assets/images/hero/mobile.png"
       ></HeroBanner4>
@@ -43,7 +43,7 @@ const page = () => {
           "<b>Money-Back Guarantee:</b> <span> If a contact isn’t verified, you get a refund.</span>",
         ]}
         btnname="Learn More"
-        btnurl="https://dashboard.proleads-landing.vercel.app"
+        btnurl="https://dashboard.buildyourcontactlist.com"
       />
 
       <Feature1></Feature1>

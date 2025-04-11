@@ -23,7 +23,7 @@ const Footer = () => {
               <div className="single-footer-widget">
                 <div className="widget-head">
                   <Link className="cs_site_branding" href="/">
-                    <div className="logo-header">Pro Leads</div>
+                    <div className="logo-header">Build Your Contact List</div>
                   </Link>
                 </div>
                 <div className="footer-content">

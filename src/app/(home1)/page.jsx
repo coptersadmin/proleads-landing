@@ -48,7 +48,7 @@ const page = () => {
 
       <Feature1></Feature1>
       <Counter1></Counter1>
-      <Brand1></Brand1>
+      {/* <Brand1></Brand1> */}
       <Faq1></Faq1>
       {/* <Testimonial></Testimonial>   */}
       <Pricing1></Pricing1>
